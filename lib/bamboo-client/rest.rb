@@ -34,7 +34,8 @@ module Bamboo
       end
 
       def projects
-        get("project/").auto_expand Project, @http
+          binding.pry
+          get("project/").auto_expand Project, @http
       end
 
       def project_for(key)
