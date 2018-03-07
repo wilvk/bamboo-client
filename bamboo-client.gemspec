@@ -2,8 +2,6 @@
 $:.push File.expand_path("../lib", __FILE__)
 require "bamboo-client/version"
 
-require "pry-byebug"
-
 Gem::Specification.new do |s|
   s.name        = "bamboo-client"
   s.version     = Bamboo::Client::VERSION
