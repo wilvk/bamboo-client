@@ -54,7 +54,7 @@ module Bamboo
         def get(uri_or_path, params = nil)
           uri = uri_for(uri_or_path, params)
           puts "Json.get: url: #{uri} cookies: #{cookies}" if $DEBUG
-          Doc.from RestClient.get(uri, default_headers)
+          Doc.from PaginatedRestClient.get(uri, default_headers)
         end
 
         def get_cookies(uri_or_path, params = nil)
