@@ -111,6 +111,10 @@ module Bamboo
 
       end # Plan
 
+      class Projects
+
+      end # Projects
+
       class Project
         def initialize(data, http)
           @data = data
